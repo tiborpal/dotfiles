@@ -1,17 +1,20 @@
 set nocompatible
 
+execute pathogen#infect()
+filetype plugin indent on
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256              " enable 256-color mode.
 syntax enable             " enable syntax highlighting (previously syntax on).
-colorscheme morning       " set colorscheme
+"colorscheme morning       " set colorscheme
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim UI                                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number                " show line numbers
-set cul                   " highlight current line
+"set cul                   " highlight current line
 set laststatus=2          " last window always has a statusline
 set nohlsearch            " Don't continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
