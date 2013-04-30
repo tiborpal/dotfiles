@@ -3,6 +3,15 @@ set nocompatible
 execute pathogen#infect()
 filetype plugin indent on
 set hidden
+
+
+" Don't update the display while executing macros
+set lazyredraw
+
+" Enable enhanced command-line completion. Presumes you have compiled
+" with +wildmenu.  See :help 'wildmenu'
+set wildmenu
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
