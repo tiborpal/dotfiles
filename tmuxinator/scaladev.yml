@@ -1,0 +1,14 @@
+# ~/.tmuxinator/scaladev.yml
+# you can make as many tabs as you wish...
+
+project_name: scalaproject
+project_root: ~/projects/scala
+tabs:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim
+        - #empty, will just run plain bash
+        - top
+        - sbt
+  - console: #empty 
