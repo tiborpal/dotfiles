@@ -8,8 +8,8 @@ tabs:
       layout: main-vertical
       panes:
         - vim
-        - #empty, will just run plain bash
-        - top
         - sbt
+        - #empty, will just run plain bash
+        - sbt console
   - console: #empty 
-  - repl: sbt console
+  - processes: top 
