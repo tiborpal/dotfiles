@@ -12,3 +12,4 @@ tabs:
         - top
         - sbt
   - console: #empty 
+  - repl: sbt console
