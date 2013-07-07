@@ -16,6 +16,6 @@
 [submodule "vim/bundle/vim-ultisnip-scala"]
 	path = vim/bundle/vim-ultisnip-scala
 	url = https://github.com/spiroid/vim-ultisnip-scala.git
-[submodule "jshint.vim"]
-	path = jshint.vim
+[submodule "vim/bundle/jshint.vim"]
+	path = vim/bundle/jshint.vim
 	url = https://github.com/walm/jshint.vim
