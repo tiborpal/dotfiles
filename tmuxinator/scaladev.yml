@@ -12,4 +12,3 @@ tabs:
         - #empty, will just run plain bash
         - sbt console
   - console: #empty 
-  - processes: top 
