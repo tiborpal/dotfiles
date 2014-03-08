@@ -17,7 +17,7 @@ set wildmenu
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256              " enable 256-color mode.
 syntax enable             " enable syntax highlighting (previously syntax on).
-"colorscheme morning       " set colorscheme
+colorscheme molokai       " set colorscheme
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim UI                                                                 "
@@ -48,3 +48,33 @@ set path=**
 set suffixesadd=.java,.jsp,.js
 set wildmode=full
 set wildignore=.class
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"gvim settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+
+"-----------------------------------------------------------------------------
+" CtrlP Settings
+"-----------------------------------------------------------------------------
+let g:ctrlp_switch_buffer = 'E'
+let g:ctrlp_tabpage_position = 'c'
+let g:ctrlp_working_path_mode = 'rc'
+let g:ctrlp_root_markers = ['.project.root']
+let g:ctrlp_custom_ignore = '\v%(/\.%(git|hg|svn)|\.%(class|o|png|jpg|jpeg|bmp|tar|jar|tgz|deb|zip)$|/target/%(quickfix|resolution-cache|streams)|/target/scala-2.10/%(classes|test-classes|sbt-0.13|cache)|/project/target|/project/project)'
+let g:ctrlp_open_new_file = 'r'
+let g:ctrlp_open_multiple_files = '1ri'
+let g:ctrlp_match_window = 'max:40'
+let g:ctrlp_prompt_mappings = {
+  \ 'PrtSelectMove("j")':   ['<c-n>'],
+  \ 'PrtSelectMove("k")':   ['<c-p>'],
+  \ 'PrtHistory(-1)':       ['<c-j>', '<down>'],
+  \ 'PrtHistory(1)':        ['<c-i>', '<up>']
+\ }
+map ,fb :CtrlPBuffer<cr>
+map ,ff :CtrlP .<cr>
+map ,fr :CtrlP<cr>
+map ,fm :CtrlPMixed<cr>
